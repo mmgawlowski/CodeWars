@@ -18,7 +18,7 @@ song_decoder("WUBWEWUBAREWUBWUBTHEWUBCHAMPIONSWUBMYWUBFRIENDWUB")
   # =>  WE ARE THE CHAMPIONS MY FRIEND
   '''
   
-  def song_decoder(song):
-    s1 = song.replace("WUB", " ")
-    s2 = " ".join(s1.split())
-    return s2
+def song_decoder(song):
+  s1 = song.replace("WUB", " ")
+  s2 = " ".join(s1.split())
+  return s2
