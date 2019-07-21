@@ -39,16 +39,11 @@ num == 16 would return 4 steps:
 
 def shortest_steps_to_num(num):
     cnt = 0
-    while True:
-        if num == 1:
-            cnt == 1
-            break
-        elif num % 2 == 0:
+    while num > 1:
+        if num % 2 == 0:
             num = num / 2
             cnt = cnt + 1
-            continue
         else:
             num = num - 1
             cnt = cnt + 1
-            continue
     return cnt
